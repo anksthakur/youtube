@@ -21,4 +21,11 @@ app.use(express.static("public"))
 // cookie  parse ki server se browser ki cookie access aur set krne ke ley
 app.use(cookieParser())
 
+//routes
+import userRouter from "./routes/user.route.js"
+
+app.use("/api/v1/users",userRouter)
+
+//http://localhost:3001/api/v1/users/register
+
 export {app}

@@ -13,3 +13,4 @@
         this.errors=errors
     }
  }
+ export {ApiError}
