@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json())
 
 // url ko encoded krna like 20% ho uhse 20 krna
-app.use(express.urlencoded())
+app.use(express.urlencoded({extended:true}))
 app.use(express.static("public"))
 // cookie  parse ki server se browser ki cookie access aur set krne ke ley
 app.use(cookieParser())
